@@ -32,6 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
         </nav>
     `;
 
-    var header = document.querySelector('header'); // Select the <header> element
-    header.insertAdjacentHTML('beforeend', navHtml); // Insert the navigation bar at the end of the <header>
+    var header = document.querySelector('header');
+    header.insertAdjacentHTML('beforeend', navHtml);
 });

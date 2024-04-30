@@ -175,3 +175,35 @@ footer {
     text-decoration: underline;
     /* Underline on hover for interactivity */
 }
+
+sup a {
+    text-decoration: none;
+    position: relative;
+    font-size: 0.75em;
+    /* Smaller font size for superscript */
+    top: -0.5em;
+    /* Raise the superscript to align with the top of the text */
+}
+
+sup a:hover::after {
+    content: attr(title);
+    /* Use the title attribute content for the tooltip */
+    position: absolute;
+    left: 0;
+    top: -1.5em;
+    /* Position the tooltip above the superscript */
+    white-space: nowrap;
+    /* Ensure the tooltip doesn't break into multiple lines */
+    background-color: black;
+    /* Background color of the tooltip */
+    color: white;
+    /* Text color of the tooltip */
+    padding: 4px 8px;
+    /* Increased padding for better readability */
+    border-radius: 3px;
+    /* Rounded corners for the tooltip */
+    font-size: 0.9em;
+    /* Increased text size within the tooltip */
+    z-index: 1000;
+    /* Make sure the tooltip is on top of other elements */
+}
