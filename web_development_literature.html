@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App Development - GartenApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Web App Development Journey for GartenApp</h1>
+        <script src="nav.js"></script>
+    </header>
+    <main>
+        <section>
+            <h2>Initial Approach: Native Development with Kotlin</h2>
+            <p>
+                The project initially started with the development of a native Android application using Kotlin. The
+                choice was driven by Kotlin's robust tooling and seamless integration with Android Studio, offering high
+                performance for Android devices. However, this approach limited our application's accessibility as it
+                was not available on iOS devices, restricting user reach.
+            </p>
+            <p class="source-link"><a href="sources.html#androidDev">Android Development Guide</a></p>
+        </section>
+
+        <section>
+            <h2>Transition to React Native</h2>
+            <p>
+                To overcome the limitation of platform exclusivity and embrace a cross-platform solution, the
+                development shifted to React Native. This framework would enable us to target both Android and iOS
+                platforms
+                simultaneously, potentially doubling our user base. React Native's component-based architecture promised
+                faster development cycles and reusability of code.
+            </p>
+            <p>
+                However, I encountered significant challenges in rendering performance when attempting to display a
+                large number of garden plot elements, each representing 0.1 cubic meters of a user's garden. This issue
+                was critical as it affected the core functionality of allowing users to interactively manage their
+                garden plots.
+            </p>
+            <p class="source-link"><a href="sources.html#reactNative">React Native Official Documentation</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Switch to Web Development</h2>
+            <p>
+                Given the performance constraints with React Native, the project pivoted to a web-based application.
+                This decision was informed by the scalability and accessibility of web technologies, which allow users
+                to access the application from any device with a web browser, regardless of the operating system. Web
+                development also provided more robust solutions for handling the potentially intensive rendering needed
+                for the
+                detailed garden plot visualizations.
+            </p>
+            <p>I also realized that my knowledge of mobile and web development was surface-level at best and that I was
+                unprepared for the whole scope of the task. Web development can not be picked up or learned by osmosis
+                in the same way that data analysis tasks or smaller scope projects can be. To prepare for the
+                development of the GartenApp I had to learn Web Development from scratch. I started out learning html
+                and css using Mozilla's mdn web docs guides on html, css, and javascript. </p>
+            <p><a href="sources.html#mdnWebGuide">MDN Getting Started with the Web</a></p>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 by Your Name</p>
+    </footer>
+</body>
+
+</html>

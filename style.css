@@ -1,0 +1,177 @@
+/* style.css */
+
+/* Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    /* Modern and readable font */
+    font-size: 16px;
+    /* Base font size */
+    color: #333;
+    /* Primary text color for readability */
+    line-height: 1.6;
+    /* Spacing between lines for better readability */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #005662;
+    /* Dark teal for headers to stand out */
+    font-family: 'Helvetica', sans-serif;
+    /* Slightly different font for headings */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2em;
+    /* Larger size for main titles */
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Color Scheme */
+:root {
+    --primary-color: #009688;
+    /* Teal, primary accent color */
+    --secondary-color: #f8f8f8;
+    /* Light grey, used for backgrounds */
+    --link-color: #005662;
+    /* Dark teal, for links */
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+/* Enhanced Navigation Styling */
+nav {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    /* Ensures that the nav is positioned relative for absolute positioning of children */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+nav>ul>li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    /* Needed for absolute positioning of dropdown */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    position: relative;
+}
+
+nav ul ul ul {
+    left: 100%;
+    /* Positions the sub-menu to the right of the parent menu */
+    top: 0;
+    /* Aligns the sub-menu with the top of the parent item */
+}
+
+nav ul ul a {
+    padding: 10px;
+    width: 200px;
+    /* Set a width for the dropdown items */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--link-color);
+}
+
+/* Main content area styling */
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8em;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main,
+    footer {
+        padding: 10px;
+    }
+}
+.source-link {
+    background-color: #f8f8f8;
+    /* Light grey background for visibility */
+    border-left: 4px solid #009688;
+    /* Teal color accent on the left border */
+    padding: 10px;
+    /* Padding for better spacing */
+    margin-top: 10px;
+    /* Top margin for separation from text */
+    display: block;
+    /* Ensures it behaves like a block for margin and padding */
+    font-style: italic;
+    /* Italicize text to differentiate from regular content */
+}
+
+.source-link a {
+    color: #005662;
+    /* Dark teal for links for better contrast and readability */
+    text-decoration: none;
+    /* No underline to keep it clean */
+}
+
+.source-link a:hover {
+    text-decoration: underline;
+    /* Underline on hover for interactivity */
+}
